@@ -14,7 +14,7 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
+        <div class="container-fluid px-4">
             <a class="navbar-brand" href="index.html">Web Projem</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Menüyü aç/kapat">
                 <span class="navbar-toggler-icon"></span>
@@ -47,76 +47,120 @@
         </div>
     </nav>
 
-    <header class="bg-dark text-white py-5">
-        <div class="container text-center">
-            <h1 class="display-5 fw-bold">Demir Şamlı</h1>
-            <p class="lead mb-0">Bilgisayar Mühendisliği Öğrencisi</p>
-        </div>
-    </header>
+    <main class="container-fluid px-0 mt-0">
+        <div class="row g-0">
 
-    <main class="container my-5">
-        <div class="row g-4">
+            <!-- SOL PANEL -->
+            <aside class="col-md-3 bg-dark text-white py-5 px-3">
 
-            <!-- Sol taraf -->
-            <div class="col-md-8">
+                <header class="mb-5">
+                    <h1 class="text-uppercase fw-bold fs-4">Demir Şamlı</h1>
+                    <p class="fst-italic text-white-50 fs-6">Bilgisayar Mühendisliği Öğrencisi</p>
+                    <hr class="border-light">
+                </header>
 
                 <section class="mb-5">
-                    <h2 class="border-bottom pb-2 mb-4">Eğitim</h2>
+                    <h5 class="border-bottom pb-2 mb-3 fs-6">İLETİŞİM</h5>
+                    <p class="text-white-50 fs-6"><i class="bi bi-envelope me-2" style="font-size: 14px;"></i>ornek@sakarya.edu.tr</p>
+                    <p class="text-white-50 fs-6"><i class="bi bi-telephone me-2" style="font-size: 14px;"></i>+90 XXX XXX XX XX</p>
+                    <p class="text-white-50 fs-6"><i class="bi bi-geo-alt me-2" style="font-size: 14px;"></i>Sakarya, Türkiye</p>
+                    <p class="text-white-50 fs-6"><i class="bi bi-linkedin me-2" style="font-size: 14px;"></i><a href="#" class="text-white-50 text-decoration-none">LinkedIn</a></p>
+                    <p class="text-white-50 fs-6"><i class="bi bi-github me-2" style="font-size: 14px;"></i><a href="https://github.com/demirrsamli" class="text-white-50 text-decoration-none">GitHub</a></p>
+                </section>
 
-                    <article class="mb-4">
-                        <h5 class="fw-semibold">Sakarya Üniversitesi</h5>
-                        <p class="text-muted mb-1">Bilgisayar Mühendisliği</p>
-                        <p class="text-secondary"><i class="bi bi-calendar3 me-1"></i>2025 - Devam ediyor</p>
+                <section class="mb-5">
+                    <h5 class="border-bottom pb-2 mb-3 fs-6">EĞİTİM</h5>
+
+                    <article class="mb-3">
+                        <h6 class="fw-semibold">Lisans</h6>
+                        <p class="mb-1 fs-6">Bilgisayar Mühendisliği</p>
+                        <p class="mb-1 fs-6">Sakarya Üniversitesi</p>
+                        <p class="text-white-50 mb-0 fs-6"><i class="bi bi-calendar3 me-2"></i>2025 - Devam ediyor</p>
                     </article>
 
                     <article>
-                        <h5 class="fw-semibold">Teksen Koleji</h5>
-                        <p class="text-muted mb-1">Lise</p>
-                        <p class="text-secondary"><i class="bi bi-calendar3 me-1"></i>2019 - 2023</p>
+                        <h6 class="fw-semibold">Lise</h6>
+                        <p class="mb-1 fs-6">Teksen Koleji</p>
+                        <p class="text-white-50 mb-0 fs-6"><i class="bi bi-calendar3 me-2"></i>2019 - 2023</p>
                     </article>
                 </section>
 
                 <section>
-                    <h2 class="border-bottom pb-2 mb-4">Yetenekler</h2>
-                    <div class="d-flex flex-wrap gap-2">
-                        <span class="badge bg-primary fs-6"><i class="bi bi-code-slash me-1"></i>C++</span>
-                        <span class="badge bg-success fs-6"><i class="bi bi-filetype-py me-1"></i>Python</span>
-                        <span class="badge bg-warning text-dark fs-6"><i class="bi bi-filetype-js me-1"></i>JavaScript</span>
-                        <span class="badge bg-danger fs-6"><i class="bi bi-filetype-html me-1"></i>HTML</span>
-                        <span class="badge bg-info fs-6"><i class="bi bi-filetype-css me-1"></i>CSS</span>
-                        <span class="badge bg-secondary fs-6"><i class="bi bi-filetype-php me-1"></i>PHP</span>
-                    </div>
-                </section>
+                    <h5 class="border-bottom pb-2 mb-3 fs-6">YETENEKLER</h5>
 
-            </div>
+                    <h6 class="fw-semibold mt-3">Programlama Dilleri</h6>
+                    <ul class="list-unstyled d-flex flex-wrap gap-1">
+                        <li style="background-color: rgba(255,255,255,0.1); padding: 2px 8px; border-radius: 4px; font-size: 13px;">C++</li>
+                        <li style="background-color: rgba(255,255,255,0.1); padding: 2px 8px; border-radius: 4px; font-size: 13px;">Python</li>
+                        <li style="background-color: rgba(255,255,255,0.1); padding: 2px 8px; border-radius: 4px; font-size: 13px;">JavaScript</li>
+                        <li style="background-color: rgba(255,255,255,0.1); padding: 2px 8px; border-radius: 4px; font-size: 13px;">HTML</li>
+                        <li style="background-color: rgba(255,255,255,0.1); padding: 2px 8px; border-radius: 4px; font-size: 13px;">CSS</li>
+                        <li style="background-color: rgba(255,255,255,0.1); padding: 2px 8px; border-radius: 4px; font-size: 13px;">PHP</li>
+                    </ul>
 
-            <!-- Sağ taraf -->
-            <aside class="col-md-4">
-
-                <section class="mb-4">
-                    <h5 class="border-bottom pb-2 mb-3">Kullanılan Araçlar</h5>
-                    <div class="d-flex flex-wrap gap-2">
-                        <span class="badge bg-dark fs-6"><i class="bi bi-code-slash me-1"></i>VS Code</span>
-                        <span class="badge bg-danger fs-6"><i class="bi bi-git me-1"></i>Git</span>
-                        <span class="badge bg-secondary fs-6"><i class="bi bi-github me-1"></i>GitHub</span>
-                        <span class="badge bg-success fs-6"><i class="bi bi-server me-1"></i>Laragon</span>
-                    </div>
-                </section>
-
-                <section>
-                    <h5 class="border-bottom pb-2 mb-3">İlgi Alanları</h5>
-                    <div class="d-flex flex-wrap gap-2">
-                        <span class="badge bg-primary fs-6"><i class="bi bi-speedometer2 me-1"></i>Sistem Optimizasyonu</span>
-                        <span class="badge bg-warning text-dark fs-6"><i class="bi bi-cpu me-1"></i>Donanım</span>
-                    </div>
+                    <h6 class="fw-semibold mt-3">Araçlar</h6>
+                    <ul class="list-unstyled d-flex flex-wrap gap-1">
+                        <li style="background-color: rgba(255,255,255,0.1); padding: 2px 8px; border-radius: 4px; font-size: 13px;">VS Code</li>
+                        <li style="background-color: rgba(255,255,255,0.1); padding: 2px 8px; border-radius: 4px; font-size: 13px;">Git</li>
+                        <li style="background-color: rgba(255,255,255,0.1); padding: 2px 8px; border-radius: 4px; font-size: 13px;">GitHub</li>
+                        <li style="background-color: rgba(255,255,255,0.1); padding: 2px 8px; border-radius: 4px; font-size: 13px;">Laragon</li>
+                    </ul>
                 </section>
 
             </aside>
 
+            <!-- SAĞ PANEL -->
+            <div class="col-md-9 bg-white py-5 px-5">
+
+                <section class="mb-4">
+                    <h3 class="fw-bold text-uppercase fs-4">Kariyer Hedefi</h3>
+                    <p>Sakarya Üniversitesi Bilgisayar Mühendisliği öğrencisi olarak yazılım geliştirme ve sistem optimizasyonu alanlarında kendimi geliştirmekteyim. Özellikle performans odaklı uygulamalar, güvenlik ve veri analizi konularında çalışmalar yapmayı hedefliyorum. Teorik bilgimi pratik projelerle birleştirerek sektöre katkı sağlayabileceğim bir pozisyonda yer almak istiyorum.</p>
+                </section>
+
+                <section class="mb-4">
+                    <h3 class="fw-bold text-uppercase fs-4">Projeler</h3>
+
+                    <article class="mb-4">
+                        <h5>Kişisel Portfolyo Web Uygulaması</h5>
+                        <p class="fw-semibold mb-1">Full-Stack Web Geliştirme</p>
+                        <p class="text-muted"><i class="bi bi-calendar3 me-2"></i>Nisan 2026 - Mayıs 2026</p>
+                        <ul style="font-size: 14px;">
+                            <li>Semantic HTML5, Bootstrap ve responsive tasarım prensipleri kullanılarak çok sayfalı bir web uygulaması geliştirildi</li>
+                            <li>JavaScript (Native) ve Vue.js ile form doğrulama sistemleri entegre edildi</li>
+                            <li>PHP tarafında kullanıcı oturum yönetimi ve form veri işleme modülleri geliştirildi</li>
+                            <li>Üçüncü parti REST API entegrasyonu ile dinamik veri çekimi sağlandı</li>
+                            <li>Proje Git versiyon kontrolü ile yönetildi ve canlı sunucuya deploy edildi</li>
+                        </ul>
+                    </article>
+
+                    <article>
+                        <h5>Parola Güvenlik Analiz Sistemi</h5>
+                        <p class="fw-semibold mb-1">Makine Öğrenmesi Tabanlı Tahminsel Model</p>
+                        <p class="text-muted"><i class="bi bi-calendar3 me-2"></i>Ocak 2026 - Mart 2026</p>
+                        <ul style="font-size: 14px;">
+                            <li>600.000 gerçek dünya parolası içeren veri seti üzerinde makine öğrenmesi algoritmaları eğitildi</li>
+                            <li>Kullanıcı girdilerinin entropi seviyesi ve kırılabilirlik olasılığı analiz edildi</li>
+                            <li>Tahminsel model ile parolaların güvenlik skoru gerçek zamanlı olarak hesaplandı</li>
+                            <li>Model doğruluğu test verileri üzerinde değerlendirildi ve optimize edildi</li>
+                        </ul>
+                    </article>
+                </section>
+
+                <section>
+                    <h3 class="fw-bold text-uppercase fs-4">İlgi Alanları</h3>
+                    <ul>
+                        <li>Donanım ve sistem bakımı</li>
+                        <li>Rekabetçi oyunlar ve performans optimizasyonu</li>
+                        <li>Spor</li>
+                    </ul>
+                </section>
+
+            </div>
+
         </div>
     </main>
 
-    <footer class="bg-dark text-white text-center py-4 mt-3">
+    <footer class="bg-dark text-white text-center py-4">
         <div class="container">
             <p class="mb-2">&copy; 2025 Demir Şamlı - Web Teknolojileri Projesi</p>
             <a href="index.html" class="text-white-50 text-decoration-none"><i class="bi bi-arrow-left me-1"></i>Ana sayfaya dön</a>
