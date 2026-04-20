@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İlgi Alanlarım | Web Projem</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Kendi CSS dosyam -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="index.html">Web Projem</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Menüyü aç/kapat">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Hakkımda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cv.html">CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sehir.html">Şehrim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="miras.html">Miras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="ilgi.html">İlgi Alanlarım</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="iletisim.html">İletişim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Giriş</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-dark text-white py-5 text-center">
+        <h1>İlgi Alanlarım</h1>
+        <p>Rekabetçi oyun dünyasına bir bakış</p>
+    </header>
+
+    <main class="container my-5">
+
+        <section class="mb-5">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-7">
+                    <h2 class="border-bottom pb-2 mb-4">Donanım ve Performans</h2>
+                    <p class="lead">Bilgisayar donanımı, sistem optimizasyonu ve rekabetçi oyun deneyimi üzerine yoğunlaşan bir ilgim var. İşlemciden ekran kartına, soğutma çözümlerinden kablo yönetimine kadar bir sistemin her bileşeninin birbiriyle uyumlu çalışmasının hem estetik hem de performans açısından önemli olduğuna inanıyorum.</p>
+                    <p>Özellikle CPU ve GPU tuning, undervolting, termal yönetim ve sistem gecikmesini minimize etme konularına ilgi duyuyorum. Farklı donanım kombinasyonlarının gerçek dünyadaki performansını test etmek ve stabil, sessiz, verimli bir PC build oluşturmak benim için sadece bir hobi değil, aynı zamanda bir disiplin.</p>
+                </div>
+                <div class="col-lg-5">
+                    <div class="d-flex flex-column gap-3">
+                        <div class="bg-light border rounded p-3 d-flex align-items-center gap-3">
+                            <i class="bi bi-cpu text-primary fs-3"></i>
+                            <div>
+                                <small class="text-muted d-block">Donanım</small>
+                                <span class="fw-semibold">CPU/GPU Tuning</span>
+                            </div>
+                        </div>
+                        <div class="bg-light border rounded p-3 d-flex align-items-center gap-3">
+                            <i class="bi bi-thermometer-half text-danger fs-3"></i>
+                            <div>
+                                <small class="text-muted d-block">Optimizasyon</small>
+                                <span class="fw-semibold">Termal ve Güç Yönetimi</span>
+                            </div>
+                        </div>
+                        <div class="bg-light border rounded p-3 d-flex align-items-center gap-3">
+                            <i class="bi bi-hdd-network text-success fs-3"></i>
+                            <div>
+                                <small class="text-muted d-block">Yapılandırma</small>
+                                <span class="fw-semibold">Sistem Build & Cable Management</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <h2 class="border-bottom pb-2 mb-4">Rekabetçi FPS Deneyimi</h2>
+            <p>Rekabetçi FPS oyunları, donanım ilgimin doğal bir uzantısı. Yüksek yenileme hızlı monitör, düşük input lag ve doğru sistem ayarlarının rekabet avantajı yarattığına dair saha deneyimim var. Ağırlıklı olarak CS2 gibi mekanik beceri ve sistem duyarlılığı gerektiren oyunlarla ilgileniyorum. Aşağıda bu alana ait geniş bir oyun veritabanından derlenen içerikleri bulabilirsin.</p>
+        </section>
+
+        <section>
+            <h2 class="border-bottom pb-2 mb-4">Oyun Veritabanı</h2>
+        </section>
+
+        <section class="mt-4">
+            <div class="input-group">
+                <input type="text" id="aramaKutusu" class="form-control" placeholder="Oyun ara...">
+                <button id="aramaButonu" class="btn btn-primary" type="button"><i class="bi bi-search"></i> Ara</button>
+            </div>
+        </section>
+
+        <section>
+            <div id="yukleniyor" class="text-center my-4 d-none">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Yükleniyor...</span>
+                </div>
+                <p class="mt-2 mb-0">Yükleniyor...</p>
+            </div>
+            <div id="oyunlar" class="row g-4 mt-4"></div>
+        </section>
+
+        <section class="mt-5">
+            <div class="alert alert-info" role="alert">
+                <i class="bi bi-info-circle"></i> Bu sayfa RAWG API kullanılarak hazırlanmıştır. Oyun verileri gerçek zamanlı olarak çekilmektedir.
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Demir Şamlı - Web Teknolojileri Projesi</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const API_KEY = "fc2add07d45d4c288f59a872672aa52b";
+        const aramaKutusu = document.getElementById("aramaKutusu");
+        const aramaButonu = document.getElementById("aramaButonu");
+        const yukleniyor = document.getElementById("yukleniyor");
+        const oyunlar = document.getElementById("oyunlar");
+
+        function yuklemeGoster() {
+            yukleniyor.classList.remove("d-none");
+        }
+
+        function yuklemeGizle() {
+            yukleniyor.classList.add("d-none");
+        }
+
+        function hataGoster(mesaj) {
+            oyunlar.innerHTML = `
+                <div class="col-12">
+                    <div class="alert alert-danger" role="alert">
+                        <i class="bi bi-exclamation-triangle"></i> ${mesaj}
+                    </div>
+                </div>
+            `;
+        }
+
+        function oyunlariGoster(liste) {
+            oyunlar.innerHTML = "";
+
+            if (!liste || liste.length === 0) {
+                oyunlar.innerHTML = `
+                    <div class="col-12">
+                        <div class="alert alert-warning" role="alert">
+                            <i class="bi bi-search"></i> Aradığın oyun bulunamadı.
+                        </div>
+                    </div>
+                `;
+                return;
+            }
+
+            liste.forEach(oyun => {
+                const resim = oyun.background_image || "https://placehold.co/400x200/212529/ffffff?text=Resim+Yok";
+                const yil = oyun.released ? oyun.released.split("-")[0] : "Bilinmiyor";
+                const rating = oyun.rating ? oyun.rating.toFixed(1) : "N/A";
+
+                const platformlar = (oyun.platforms || [])
+                    .slice(0, 3)
+                    .map(p => `<span class="badge bg-secondary me-1">${p.platform.name}</span>`)
+                    .join("");
+
+                const kart = `
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="${resim}" class="card-img-top" alt="${oyun.name}" style="height: 200px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">${oyun.name}</h5>
+                                <p class="card-text mb-1"><i class="bi bi-calendar"></i> Çıkış: ${yil}</p>
+                                <p class="card-text mb-2"><i class="bi bi-star-fill text-warning"></i> ${rating}</p>
+                                <div>${platformlar}</div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+
+                oyunlar.insertAdjacentHTML("beforeend", kart);
+            });
+        }
+
+        async function oyunlariGetir(url) {
+            yuklemeGoster();
+            oyunlar.innerHTML = "";
+            try {
+                const cevap = await fetch(url);
+                if (!cevap.ok) {
+                    throw new Error("API isteği başarısız oldu.");
+                }
+                const veri = await cevap.json();
+                oyunlariGoster(veri.results);
+            } catch (hata) {
+                hataGoster("Oyun verileri yüklenirken bir hata oluştu: " + hata.message);
+            } finally {
+                yuklemeGizle();
+            }
+        }
+
+        function aramaYap() {
+            const metin = aramaKutusu.value.trim();
+            if (metin === "") {
+                oyunlariGetir(`https://api.rawg.io/api/games?key=${API_KEY}&page_size=9&ordering=-rating`);
+                return;
+            }
+            oyunlariGetir(`https://api.rawg.io/api/games?key=${API_KEY}&search=${encodeURIComponent(metin)}&page_size=9`);
+        }
+
+        aramaButonu.addEventListener("click", aramaYap);
+        aramaKutusu.addEventListener("keydown", (e) => {
+            if (e.key === "Enter") {
+                aramaYap();
+            }
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            oyunlariGetir(`https://api.rawg.io/api/games?key=${API_KEY}&page_size=9&ordering=-rating&genres=action`);
+        });
+    </script>
+</body>
+</html>
