@@ -60,28 +60,28 @@
         <div id="iletisimApp">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <form id="iletisimForm" novalidate>
+                    <form id="iletisimForm" action="iletisim_islemi.php" method="POST" novalidate>
                         <div class="mb-3">
                             <label for="adsoyad" class="form-label">Ad Soyad</label>
-                            <input type="text" id="adsoyad" class="form-control" v-model="adsoyad">
+                            <input type="text" id="adsoyad" name="adsoyad" class="form-control" v-model="adsoyad">
                             <div id="adsoyad-hata" class="text-danger small mt-1"></div>
                         </div>
 
                         <div class="mb-3">
                             <label for="email" class="form-label">E-posta</label>
-                            <input type="email" id="email" class="form-control" v-model="email">
+                            <input type="email" id="email" name="email" class="form-control" v-model="email">
                             <div id="email-hata" class="text-danger small mt-1"></div>
                         </div>
 
                         <div class="mb-3">
                             <label for="telefon" class="form-label">Telefon</label>
-                            <input type="tel" id="telefon" class="form-control" v-model="telefon" placeholder="5XXXXXXXXX">
+                            <input type="tel" id="telefon" name="telefon" class="form-control" v-model="telefon" placeholder="5XXXXXXXXX">
                             <div id="telefon-hata" class="text-danger small mt-1"></div>
                         </div>
 
                         <div class="mb-3">
                             <label for="konu" class="form-label">Konu</label>
-                            <select id="konu" class="form-select" v-model="konu">
+                            <select id="konu" name="konu" class="form-select" v-model="konu">
                                 <option value="">seçin...</option>
                                 <option value="staj">Staj Görüşmesi</option>
                                 <option value="proje">Proje Değerlendirmesi</option>
@@ -108,13 +108,13 @@
 
                         <div class="mb-3">
                             <label for="mesaj" class="form-label">Mesajınız</label>
-                            <textarea id="mesaj" class="form-control" rows="4" v-model="mesaj"></textarea>
+                            <textarea id="mesaj" name="mesaj" class="form-control" rows="4" v-model="mesaj"></textarea>
                             <div id="mesaj-hata" class="text-danger small mt-1"></div>
                         </div>
 
                         <div class="mb-3">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="kvkk" v-model="kvkk">
+                                <input class="form-check-input" type="checkbox" id="kvkk" name="kvkk" v-model="kvkk">
                                 <label class="form-check-label" for="kvkk">Kişisel verilerimin işlenmesine onay veriyorum (KVKK)</label>
                             </div>
                             <div id="kvkk-hata" class="text-danger small mt-1"></div>

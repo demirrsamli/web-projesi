@@ -149,7 +149,8 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             if (hataSayisi === 0) {
-                bildirimGoster('success', 'Vanilla JS doğrulama başarılı! Form şimdi gönderilecek. (PHP backend yarın eklenecek)');
+                bildirimGoster('success', 'Vanilla JS doğrulama başarılı! Form gönderiliyor...');
+                document.getElementById('iletisimForm').submit();
             } else {
                 bildirimGoster('danger', 'Vanilla JS doğrulamasında ' + hataSayisi + ' adet hata bulundu. Lütfen alanları kontrol edin.');
             }

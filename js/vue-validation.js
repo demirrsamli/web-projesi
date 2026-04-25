@@ -108,7 +108,8 @@ createApp({
             }
 
             if (hataSayisi === 0) {
-                this.bildirimGoster('info', 'Vue.js doğrulama başarılı! Form şimdi gönderilecek.');
+                this.bildirimGoster('info', 'Vue.js doğrulama başarılı! Form gönderiliyor...');
+                document.getElementById('iletisimForm').submit();
             } else {
                 this.bildirimGoster('danger', 'Vue.js doğrulamasında ' + hataSayisi + ' adet hata bulundu. Lütfen alanları kontrol edin.');
             }
