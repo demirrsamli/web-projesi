@@ -32,6 +32,10 @@ $tercihMetin = $tercihMap[$tercih] ?? $tercih;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mesajınız Alındı | Web Projem</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
@@ -42,7 +46,7 @@ $tercihMetin = $tercihMap[$tercih] ?? $tercih;
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid px-4">
+        <div class="container-fluid px-5">
             <a class="navbar-brand" href="index.html">Web Projem</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Menüyü aç/kapat">
                 <span class="navbar-toggler-icon"></span>
@@ -77,7 +81,7 @@ $tercihMetin = $tercihMap[$tercih] ?? $tercih;
 
     <header class="bg-dark text-white py-5 text-center">
         <div class="container">
-            <h1><i class="bi bi-check-circle-fill text-success"></i> Mesajınız Alındı</h1>
+            <h1><i class="bi bi-check-circle-fill text-success"></i> Mesajınız <span class="accent">Alındı</span></h1>
             <p class="mb-0">Form verileriniz aşağıda görüntülenmektedir.</p>
         </div>
     </header>
